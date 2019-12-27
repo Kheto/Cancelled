@@ -1,0 +1,12 @@
+extends layout
+
+block content
+    div= `${person.Name} is cancelled because of ${person.Reason.join(", ")}`
+    div
+        if person.Receipts
+            a(href=person.Receipts) Click here to see why
+        else
+            span There is no reason on record
+
+    div
+        a(href="../search/") Return

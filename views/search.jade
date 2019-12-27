@@ -1,0 +1,11 @@
+extends layout
+
+block content
+    .centre
+        .content
+            .centre 
+                .title-text Cancelled
+            input#searchbox(type="text", list="search-suggestions")
+            .explainer Start typing in the search box
+            div#search-results
+    script(src="/js/autocomplete.js")

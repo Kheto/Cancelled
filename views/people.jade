@@ -1,0 +1,7 @@
+extends layout
+
+block content
+  ol
+  each person in people
+    li
+      a(href="./"+ person.id)= person.Name

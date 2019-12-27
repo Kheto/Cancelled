@@ -1,0 +1,53 @@
+@font-face{
+  font-family: "Aguafina Script";
+  src: url("./AguafinaScript-Regular.ttf");
+}
+
+body {
+  padding: 50px;
+  font: 16px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: #333;
+}
+
+a {
+  color: #ccc;
+}
+
+ul{
+  list-style-type: none;
+  padding: 10px
+}
+
+li{
+  margin: 2px;
+  padding: 2px;
+}
+
+#searchbox{
+  background-color: #eee;
+  border: 2px solid #d60000;
+  width: 200px;
+  font-size: 110%;
+}
+
+.content{
+  padding:50px;
+}
+
+.title-text{
+  font: 300%  "Aguafina Script";
+  color: #d60000;
+  padding-bottom: 20px;
+  /* font-family: cursive; */
+}
+
+.explainer{
+  font-size: 12px;
+  font-family: monospace;
+  color: #aaa;
+}
+
+.centre{
+  display: flex;
+  justify-content: space-around;
+}
