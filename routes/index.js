@@ -17,10 +17,7 @@ router.get('/people/:id', function(req, res, next){
 });
 
 router.get("/", function(req, res, next){
-  data.fetchPeople(function sendResponse(people){
-    res.setHeader("testheader", JSON.stringify(people));
-    res.render("search")
-  })
+  res.redirect("/search/");
 })
 
 router.get("/test", function(req, res, next){
