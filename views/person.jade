@@ -7,6 +7,9 @@ block content
             a(href=person.Receipts) Click here to see why
         else
             span There is no reason on record
+    div#embedded-tweet
 
     div
         a(href="../search/") Return
+        
+    script(src="/js/embedtweet.js" tweetUrl=person.Receipts)
