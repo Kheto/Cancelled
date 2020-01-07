@@ -1,5 +1,7 @@
+const fetchUrl = location.href;
+
 async function getSearchResults(term) {
-  const response = await fetch("http://localhost:3000/search/" + term);
+  const response = await fetch(fetchUrl + term);
   const myJson = await response.json();
   const result = myJson;
   const searchResultsContaner = SearchResultContainer();
