@@ -68,6 +68,7 @@ function getCachedByName(name, callback) {
 }
 
 function autoCompleteName(searchString, callback) {
+  fetchPeople(()=>{});
   callback(
     people
       .filter(
