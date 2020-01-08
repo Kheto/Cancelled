@@ -68,20 +68,20 @@ function getCachedByName(name, callback) {
 }
 
 function autoCompleteName(searchString, callback) {
-  fetchPeople(()=>{});
-  callback(
-    people
-      .filter(
-        person =>
-          person.Name.toLocaleLowerCase().indexOf(
-            searchString.toLocaleLowerCase()
-          ) > -1
-      )
-      .map(person => {
-        let obj = { "Name": person.Name, "id": person.id, "blah": "non" }
-        return obj;
-      })
-  );
+  fetchPeople((people)=>{
+    callback(
+      people
+        .filter(
+          person =>
+            person.Name.toLocaleLowerCase().indexOf(
+              searchString.toLocaleLowerCase()
+            ) > -1
+        )
+        .map(person => {
+          let obj = { "Name": person.Name, "id": person.id, "blah": "non" }
+          return obj;
+        })
+    );});
 }
 
 fetchPeople(function(result) {
